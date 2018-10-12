@@ -1,0 +1,50 @@
+.wp_syntax {
+    color         : #100;
+    margin        : 0 0 1.5em 0;
+    overflow      : hidden;
+    background    : #121212;
+    padding       : 10px 20px;
+    padding-left  : 30px;
+    border-radius : 5px;
+    box-shadow    : rgba(0, 0, 0, 0.55) 0px 20px 68px;
+}
+.wp_mac_syntax:first-child {
+    margin-top:20px;
+}
+.wp_mac_syntax_window_controls {
+    margin-bottom : 20px;
+}
+
+/* potential overrides for other styles */
+.wp_syntax pre {
+    background            : transparent !important;
+    border                : none !important;
+    margin                : 0 !important;
+    width                 : auto !important;
+    float                 : none !important;
+    clear                 : none !important;
+    overflow              : visible !important;
+    font-family           : monospace !important;
+    font-size             : 14px !important;
+    line-height           : 16px !important;
+    padding               : 0 4px !important;
+    padding-bottom        : 20px !important;
+    white-space           : pre !important;
+    -moz-box-shadow       : 0 0 0 rgba(0, 0, 0, 0) !important; /* FF3.5+ */
+    -webkit-box-shadow    : 0 0 0 rgba(0, 0, 0, 0) !important; /* Saf3.0+, Chrome */
+    box-shadow            : 0 0 0 rgba(0, 0, 0, 0) !important; /* Opera 10.5, IE 9.0 */
+    -webkit-border-radius : 0 !important;
+    -moz-border-radius    : 0 !important;
+    border-radius         : 0 !important;
+}
+
+.wp_mac_syntax .code-toolbar {
+    padding-left: 30px;
+    overflow: auto;
+    position: static;
+}
+
+.wp_syntax div.code-toolbar > .toolbar {
+    top : 8px;
+    opacity: 1;
+}
