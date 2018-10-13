@@ -80,6 +80,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="" target="_blank">
                         <i class="now-ui-icons gestures_tap-01"></i>
+                        <p>关于我</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="" target="_blank">
+                        <i class="now-ui-icons gestures_tap-01"></i>
                         <p>留言</p>
                     </a>
                 </li>
@@ -113,8 +119,8 @@
         <div class="container">
             <div class="content-center brand">
                 <!--<img class="n-logo" src="./assets/images/logo.png" alt="">-->
-                <h1 class="h1-title"><a href="#" title="一米">一米</a></h1>
-                <h3>永远有多远，或许只有一米的距离.</h3>
+                <h1 class="h1-title"><a href="https://github.com/userzhangjinlong" title="张金龙" target="_blank">张金龙</a></h1>
+                <h3>Good Good Study,Day Day Up！</h3>
             </div>
             <!--<div class="arrow-down"><i class="now-ui-icons arrows-1_minimal-down"></i></div>-->
         </div>
@@ -373,6 +379,20 @@ origin  https://git.net/b/b.git <span class="token punctuation">(</span>push<spa
 <script src="./assets/scripts/common.js" type="text/javascript"></script>
 <script type="text/javascript" src="./assets/scripts/comments.js"></script>
 
+<script type="text/javascript">
+    getArticle();
+    function getArticle(){
+        $.ajax({
+            type:"get",
+            url:"http://api.blog.local/api/index",
+            data:{},
+            success:function (res) {
+                console.log(res);
+            }
+        })
+    }
+
+</script>
 
 </body>
 </html>
